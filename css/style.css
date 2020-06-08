@@ -1,0 +1,985 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.btn {
+    background: #fc5c9c;
+    color: #e2f3f5;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-bg {
+    background-color: #00051f;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header-main ul {
+    justify-content: center;
+}
+
+.header-main ul li a {
+    color: #e2f3f5;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+.banner-container{
+    position: relative;
+    z-index: 9;
+}
+
+.main-banner-bg {
+    background: #0e153a;
+    position: relative;
+}
+
+.banner-content {
+    align-items: center;
+    text-align: center;
+    padding: 8% 0;
+}
+
+.heading-grey {
+    color: #e2f3f5;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.banner-content p {
+    color: #e2f3f5;
+    font-size: 25px;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.about-us-section {
+    padding: 8% 0;
+    text-align: center;
+}
+
+.about-bg {
+    background-color: #eef8f9e8;
+}
+
+.image-active {
+    border: 5px solid #0e153a;
+    width: 30%;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.about-us-section img {
+    border-radius: 50%;
+    display: block;
+}
+
+.heading-blue {
+    font-weight: 800;
+    font-size: 80px;
+    margin-top: 30px;
+    color: #0e153a;
+}
+
+.about-us-section h3 {
+    color: #0e153a;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.about-us-section p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 30px;
+    width: 80%;
+    margin: 30px auto 0;
+    color: #0e153a;
+}
+
+.about-us-section p b {
+    font-weight: 600;
+}
+
+span.social-icons ul {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+span.social-icons ul li a svg {
+    width: 30px;
+}
+
+span.social-icons ul li a svg path {
+    fill: #0e153a;
+}
+
+span.social-icons ul li a {
+    margin: 0 10px;
+}
+
+.what-do-bg {
+    background: #0e153a;
+}
+
+.what-do-section-block {
+    text-align: center;
+    padding: 8% 0;
+}
+
+.what-do-section-block p {
+    font-size: 25px;
+    line-height: 1.5;
+    width: 70%;
+    margin: 30px auto 0;
+    color: #e2f3f5;
+}
+
+.what-do-section-block .framework li svg {
+    width: 100px;
+}
+
+.what-do-section-block .framework li svg path {
+    fill: #e2f3f5;
+}
+
+span.framework ul li span.language {
+    display: block;
+    margin-top: 20px;
+    color: #e2f3f5;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+span.framework ul {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+span.language-icons ul li svg {
+    width: 70px;
+}
+
+span.language-icons ul li svg path {
+    fill: #e2f3f5;
+}
+
+.language-icons ul {
+    margin-top: 80px;
+    justify-content: center;
+
+}
+
+.language-icons ul li {
+    margin: 0 20px;
+}
+
+.portfio-bg {
+    background: #f0f9fa;
+}
+
+.portfolio-content-section {
+    padding: 8% 0;
+    text-align: center;
+}
+
+.portfolio-content-section p {
+    font-size: 25px;
+    color: #0e153a;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.portfolio-content-section img {
+    margin-top: 80px;
+}
+
+.shoify-wp-bg {
+    background: #0e153a;
+    padding: 3% 0;
+}
+
+.shopify-wp-image img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.shopify-wp-content h2 {
+    color: #f0f9fa;
+    font-weight: 800;
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+.shopify-wp-content p {
+    font-size: 25px;
+    color: #f0f9fa;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.skills-bg {
+    background: #f0f9fa;
+}
+
+.skills-block-section {
+    padding: 8% 0;
+}
+
+.skills-block-section h2 {
+    text-align: center;
+}
+
+.skills-block-section p {
+    font-size: 25px;
+    color: #0e153a;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skills-rating {
+    margin-top: 80px;
+}
+
+span.skills-name ul li {
+    color: #0e153a;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+span.skills-ratings ul li ul li {
+    background: #0e153a;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+li.wihout-dot {
+    background: transparent !important;
+    border: 2px solid #0e153a;
+    width: 28px !important;
+    height: 28px !important;
+}
+
+span.skills-ratings ul li ul {
+    margin-bottom: 15px;
+}
+
+span.rating-left>ul {
+    padding-right: 20px;
+}
+
+.name-right>ul {
+    padding-left: 20px;
+}
+
+.contact-bg {
+    background: #0e153a;
+}
+
+.contact-form-content p {
+    font-size: 25px;
+    color: #f0f9fa;
+    margin: 0;
+    line-height: 1.5;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.contact-bg {
+    background: #0e153a;
+    padding: 5% 0;
+}
+
+.contact-fields .input-field label {
+    color: #e2f3f5;
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0 10px;
+}
+
+.contact-fields .input-field input {
+    width: 90%;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 20px;
+    outline: none;
+    color: #0e153a;
+}
+
+.tagline-bg {
+    background: #00051f;
+    text-align: center;
+    padding: 20px 0;
+    color: #e2f3f5;
+    font-size: 18px;
+}
+
+.contact-fields .input-field textarea {
+    width: 90%;
+    font-size: 18px;
+    padding: 20px 0 0 20px;
+    outline: none;
+    color: #0e153a;
+    font-family: 'Raleway', sans-serif;
+}
+
+.shopify-wp-block {
+    align-items: center;
+}
+
+.portfolio-mob {
+    display: none;
+}
+
+.message {
+    padding-left: 20px;
+}
+
+/* ===== Responsive Media query ===== */
+@media only screen and (max-width: 1024px) {
+    .banner-content {
+         
+        padding: 12% 0 8%;
+    }
+    .heading-grey {
+        font-size: 70px;
+    }
+
+    .banner-content p {
+        font-size: 22px;
+    }
+
+    .image-active {
+        border: 3px solid #0e153a;
+        width: 25%;
+        padding: 10px;
+    }
+
+    .heading-blue {
+        font-size: 70px;
+    }
+
+    .about-us-section h3 {
+        font-size: 30px;
+    }
+
+    .about-us-section p {
+        font-size: 22px;
+    }
+
+    .what-do-section-block p {
+        font-size: 22px;
+    }
+
+    .portfolio-content-section p {
+        font-size: 22px;
+        width: 80%;
+    }
+
+    .shopify-wp-image img {
+        width: 60%;
+    }
+
+    .shopify-wp-content h2 {
+        font-size: 70px;
+    }
+
+    .shopify-wp-content p {
+        font-size: 22px;
+    }
+
+    .skills-block-section p {
+        font-size: 22px;
+    }
+
+    .contact-form-content p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    span.skills-name ul li {
+        font-size: 25px;
+    }
+
+    span.skills-ratings ul li ul li {
+        width: 25px;
+        height: 25px;
+    }
+
+    li.wihout-dot {
+        background: transparent !important;
+        border: 2px solid #0e153a;
+        width: 23px !important;
+        height: 23px !important;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    span.rating-left>ul {
+        padding-right: 10px;
+    }
+
+    .name-right>ul {
+        padding-left: 10px;
+    }
+
+    span.skills-name ul li {
+        font-size: 22px;
+    }
+
+    span.skills-ratings ul li ul li {
+        width: 22px;
+        height: 22px;
+    }
+
+    li.wihout-dot {
+        background: transparent !important;
+        border: 2px solid #0e153a;
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .width-100-mob {
+        width: 100%;
+    }
+
+    .heading-grey {
+        font-size: 60px;
+    }
+
+    .banner-content p,
+    .skills-block-section p,
+    .contact-form-content p,
+    .shopify-wp-content p,
+    .portfolio-content-section p,
+    .what-do-section-block p,
+    .about-us-section p {
+        font-size: 20px;
+    }
+
+    .heading-blue {
+        font-size: 60px;
+    }
+
+    .about-us-section h3 {
+        font-size: 25px;
+    }
+
+    .shopify-wp-content h2 {
+        font-size: 60px;
+    }
+
+    .contact-fields .input-field input {
+        height: 30px;
+    }
+
+    .contact-fields .input-field label {
+        font-size: 16px;
+    }
+
+    .skills-rating {
+        margin-top: 20px;
+    }
+
+    span.rating-left>ul {
+        padding-right: 0;
+    }
+
+    .name-right>ul {
+        padding-left: 0;
+    }
+
+    span.skills-name ul li {
+        font-size: 30px;
+    }
+
+    span.skills-ratings ul li ul li {
+        width: 30px;
+        height: 30px;
+    }
+
+    li.wihout-dot {
+        background: transparent !important;
+        border: 2px solid #0e153a;
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .shopify-wp-image img {
+        width: 80%;
+    }
+
+    .full-skills-section.flex {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    span.framework ul li span.language {
+        font-size: 25px;
+    }
+
+    .shopify-wp-content h2 {
+        font-size: 50px;
+    }
+
+    .language-icons ul li {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .tagline-content p {
+        font-size: 16px;
+    }
+    .custom-cv{
+        margin-top: 25px !important;
+    }
+    .full-input-form{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .skills-rating{
+        width: 97%;
+        margin: 0 auto;
+    }
+    .banner-content {
+        padding: 15% 0 8%;
+    }
+    .heading-grey {
+        font-size: 50px;
+    }
+
+    .banner-content p,
+    .skills-block-section p,
+    .contact-form-content p,
+    .shopify-wp-content p,
+    .portfolio-content-section p,
+    .what-do-section-block p,
+    .about-us-section p {
+        font-size: 18px;
+    }
+
+    .image-active {
+        width: 30%;
+    }
+
+    .heading-blue {
+        font-size: 50px;
+    }
+
+    .about-us-section h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    span.framework ul li {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    span.framework ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .portfolio-content-section img {
+        margin-top: 40px;
+    }
+
+    .shopify-wp-image img {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .shopify-wp-content h2 {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.2;
+    }
+
+    .shopify-wp-content p {
+        text-align: center;
+    }
+
+    .shoify-wp-bg {
+        padding: 8% 0;
+    }
+
+    .heading-grey {
+        text-align: center;
+    }
+
+    .contact-form-content p {
+        text-align: center;
+        width: 80%;
+        margin: 20px auto 0;
+    }
+
+    .contact-fields {
+        margin-top: 40px;
+    }
+
+    .shopify-wp-content p {
+        text-align: center;
+        width: 80%;
+    }
+
+    .portfolio-mob {
+        display: block;
+    }
+
+    .portfolio-deks {
+        display: none;
+    }
+
+    .language-icons ul li {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header-main ul li a {
+        padding: 20px 15px;
+    }
+
+    .image-active {
+        width: 50%;
+    }
+
+    span.language-icons ul li {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-content {
+        padding: 25% 0 8%;
+    }
+    span.skills-name ul li {
+        font-size: 25px;
+    }
+
+    span.skills-ratings ul li ul li {
+        width: 25px;
+        height: 25px;
+    }
+
+    li.wihout-dot {
+        width: 23px !important;
+        height: 23px !important;
+    }
+
+    .banner-content p {
+        width: 80%;
+    }
+
+    .what-do-section-block p {
+        width: 80%;
+    }
+
+    .contact-fields .input-field input {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .heading-grey {
+        font-size: 40px;
+    }
+
+    .heading-blue {
+        font-size: 40px;
+    }
+
+    .about-us-section h3 {
+        font-size: 18px;
+    }
+
+    .shopify-wp-content h2 {
+        font-size: 40px;
+    }
+
+    .header-main ul li a {
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    span.skills-name ul li {
+        font-size: 22px;
+    }
+
+    span.skills-ratings ul li ul li {
+        width: 22px;
+        height: 22px;
+    }
+
+    li.wihout-dot {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .banner-content p,
+    .about-us-section p,
+    .what-do-section-block p,
+    .portfolio-content-section p,
+    .shopify-wp-content p,
+    .skills-block-section p,
+    .contact-form-content p {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header-main ul li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .header-main ul li a {
+        font-size: 13px;
+        padding: 20px 8px;
+    }
+
+    span.skills-name ul li {
+        font-size: 20px;
+    }
+
+    span.skills-ratings ul li ul li {
+        width: 20px;
+        height: 20px;
+    }
+
+    li.wihout-dot {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    span.framework ul li span.language {
+        font-size: 24px;
+    }
+}
